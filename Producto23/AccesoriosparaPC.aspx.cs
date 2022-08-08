@@ -206,12 +206,27 @@ namespace Producto23
 
         protected void Button10_Click(object sender, EventArgs e)
         {
-
+            string z = "";
+            string md = "";
+            objBL.eliminarGabinete(Convert.ToInt16(GridView10.Rows[GridView10.SelectedIndex].Cells[1].Text), ref z);
+            TextBox18.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }
 
         protected void GridView10_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button9_Click(object sender, EventArgs e)
+        {
+            string z = "";
+            string md = "";
+            objBL.actualizarGabinete(TextBox16.Text, Convert.ToInt16(GridView9.Rows[GridView9.SelectedIndex].Cells[1].Text),  ref z);
+            TextBox17.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }
     }
 }

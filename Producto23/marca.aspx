@@ -139,7 +139,7 @@
 &nbsp;<asp:TextBox ID="TextBox4" runat="server" Width="273px"></asp:TextBox>
                  <br />
                  <br />
-                 <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Modificar Marca" Width="118px" />
+                 <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Modificar Marca" Width="214px" OnClick="Button3_Click1" />
                  <br />
                  <br />
                  <br />
@@ -170,8 +170,10 @@
                      <SortedDescendingHeaderStyle BackColor="#00547E" />
                  </asp:GridView>
                  <br />
-                 <asp:Button ID="Button4" runat="server" BackColor="#9999FF" Text="Eliminar Marca" Width="289px" />
+                 <asp:Button ID="Button4" runat="server" BackColor="#9999FF" OnClick="Button4_Click" Text="Eliminar Marca" Width="289px" />
                  <br />
+                 <br />
+                 <asp:TextBox ID="TextBox6" runat="server" Width="706px"></asp:TextBox>
 
              </center>
         </div>

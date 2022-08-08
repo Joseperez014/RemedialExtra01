@@ -316,7 +316,7 @@
              <asp:TextBox ID="TextBox16" runat="server" Width="329px"></asp:TextBox>
              <br />
              <br />
-             <asp:Button ID="Button9" runat="server" BackColor="#0099CC" BorderColor="#006699" Text="Modificar Gabinete" Width="194px" />
+             <asp:Button ID="Button9" runat="server" BackColor="#0099CC" BorderColor="#006699" OnClick="Button9_Click" Text="Modificar Gabinete" Width="194px" />
              <br />
              <br />
              <asp:TextBox ID="TextBox17" runat="server" Width="547px"></asp:TextBox>
@@ -341,6 +341,9 @@
               </asp:GridView>
               <br />
               <asp:Button ID="Button10" runat="server" BackColor="#CC0066" Text="Eliminar gabinete" Width="162px" />
+              <br />
+              <br />
+              <asp:TextBox ID="TextBox18" runat="server" Width="654px"></asp:TextBox>
               <br />
 
               </center></div>

@@ -86,6 +86,7 @@ namespace Producto23
             
 
         }
+        
         protected void Button4_Click(object sender, EventArgs e)
         {
 
@@ -161,6 +162,31 @@ namespace Producto23
                 TextBox2.Text = m;
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
             }
+        }
+
+        protected void GridView6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            string z = "";
+            string md = "";
+            objBL.ActualizarCPUgenerico(TextBox4.Text, Convert.ToInt16(GridView6.Rows[GridView6.SelectedIndex].Cells[1].Text),  ref z);
+            TextBox6.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
+        }
+
+        protected void Button4_Click1(object sender, EventArgs e)
+        {
+            string z = "";
+            string md = "";
+            objBL.eliminarCPUgenerico(Convert.ToInt16(GridView7.Rows[GridView7.SelectedIndex].Cells[1].Text), ref z);
+            TextBox7.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }
     }
 }

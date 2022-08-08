@@ -173,12 +173,22 @@ namespace Producto23
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-
+            string z = "";
+            string md = "";
+            objBL.eliminarcomputadorafinal(TextBox11.Text, ref z);
+            TextBox13.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-
+            string z = "";
+            string md = "";
+            objBL.Actualizarcomputadorafinal(TextBox10.Text, TextBox9.Text, ref z);
+            TextBox12.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }
     }
 }

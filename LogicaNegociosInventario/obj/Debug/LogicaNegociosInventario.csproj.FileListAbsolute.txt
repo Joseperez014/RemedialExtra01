@@ -9,3 +9,14 @@ C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosI
 C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.CopyComplete
 C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.dll
 C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.pdb
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\LogicaNegociosInventario.dll
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\LogicaNegociosInventario.pdb
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\AccesoDatosInventario.dll
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\EntidadesInventario.dll
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\AccesoDatosInventario.pdb
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\bin\Debug\EntidadesInventario.pdb
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.CopyComplete
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.dll
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.pdb
+C:\Users\Lenovo_AIO_11\Desktop\Producto2y3-RamaGerardo\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.AssemblyReference.cache

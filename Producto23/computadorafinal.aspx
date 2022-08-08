@@ -232,6 +232,9 @@
             <br />
             <asp:Button ID="Button3" runat="server" BackColor="#0066FF" OnClick="Button3_Click" Text="Modificar PC" Width="191px" />
             <br />
+            <br />
+            <asp:TextBox ID="TextBox12" runat="server" Width="470px"></asp:TextBox>
+            <br />
             </center> </div>
         <div class="bg-light fst-italic"><center><h3>EIMINAR PC FINAL&nbsp; </h3></center></div>
         <div><center>
@@ -254,7 +257,11 @@
             <br />
             <br />
             <asp:Button ID="Button4" runat="server" BackColor="#CC99FF" OnClick="Button4_Click" Text="Eliminar PC final" Width="167px" />
-            </center> </div>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox13" runat="server" Width="439px"></asp:TextBox>
+            </center>
+        </div>
 
     </form>
 </body>

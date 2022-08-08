@@ -54,7 +54,7 @@ namespace Producto23
         {
             string m = "";
             string md = "";
-            GridView1.DataSource = objBL.obtenmodelocpu(ref m);
+            GridView1.DataSource = objBL.obtentodasMarcas(ref m);
             GridView1.DataBind();
             TextBox3.Text = m;
             md = objBL.MiMessageBox("CONSULTA CORRECTA", m, 2);
@@ -63,10 +63,25 @@ namespace Producto23
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
             string z = "";
             string md = "";
-            objBL.Insertarmarca(TextBox1.Text, TextBox2.Text, ref z);
-            TextBox3.Text = z;
+            objBL.eliminarMarca(Convert.ToInt16(GridView3.Rows[GridView3.SelectedIndex].Cells[1].Text),ref z);
+            TextBox6.Text = z;
+            md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
+        }
+
+        protected void Button3_Click1(object sender, EventArgs e)
+        {
+            string z = "";
+            string md = "";
+            objBL.ActualizarMarca(TextBox4.Text, Convert.ToInt16(GridView2.Rows[GridView2.SelectedIndex].Cells[1].Text),  ref z);
+            TextBox5.Text = z;
             md = objBL.MiMessageBox("CONSULTA CORRECTA", z, 2);
             Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
         }

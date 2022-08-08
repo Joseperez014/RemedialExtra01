@@ -656,113 +656,152 @@ namespace LogicaNegociosInventario
             return salida;
         }
         //UPDATE DE LA BASE DE DATOS
-        public DataTable ActualizarMarca(string descripcion,int idmarca, ref string mensaje)
+        public Boolean ActualizarMarca( string descripcion, int idmarca, ref string m)
         {
-            
-            string consulta = "Update Marca Set Extra  = " + descripcion + "where  Id_Marca =" + idmarca;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "Update Marca Set Extra =  " + " '" + descripcion +  "'" +"  where  Id_Marca = " + idmarca; 
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("Extra",SqlDbType.VarChar,250),
+                new SqlParameter("Id_Marca",SqlDbType.Int)
+
+            };
+            coleccion[0].Value = descripcion;
+            coleccion[1].Value = idmarca;
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable ActualizarCPUgenerico(string num_inv, string estado,  ref string mensaje)
+        public Boolean Actualizarcomputadorafinal(string estado, string num_inv, ref string m)
         {
-            string consulta = "Update computadorafinal Set estado = " + estado + "where num_inv ="+ num_inv ;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "Update computadorafinal Set estado =  " + " '" +estado + "'" + "  where  num_inv = " + " '" + num_inv + "'";
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("estado",SqlDbType.VarChar,250),
+                new SqlParameter("num_inv",SqlDbType.VarChar,250)
+
+            };
+            coleccion[0].Value = estado;
+            coleccion[1].Value = num_inv;
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable Actualizarcomputadorafinal(string descripcion,int cpu, ref string mensaje)
-        {
-            string consulta = "Update CPU_Generico Set descripcion = "+descripcion + "where id_CPU =" + cpu;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+        public Boolean ActualizarCPUgenerico(string descripcion, int cpu,  ref string m)
+        { 
+            string sentencia = "Update CPU_Generico Set descripcion =  " + " '" + descripcion + "'" + "  where  id_CPU = " + cpu;
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("descripcion",SqlDbType.VarChar,250),
+                new SqlParameter("id_CPU",SqlDbType.Int)
+
+            };
+            coleccion[0].Value = descripcion;
+            coleccion[1].Value = cpu;
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable UbicacionGabinete(string modelo,int gabinete, ref string mensaje)
+        public Boolean actualizarGabinete(string modelo, int gabinete,  ref string m)
         {
-            string consulta = "Update Gabinete Set Modelo = " + modelo + "where Id_Gabinete =" + gabinete;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "Update Gabinete Set Modelo =  " + " '" + modelo + "'" + "  where  Id_Gabinete = " + gabinete;
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("Modelo",SqlDbType.VarChar,250),
+                new SqlParameter("Id_Gabinete",SqlDbType.Int)
+
+            };
+            coleccion[0].Value = modelo;
+            coleccion[1].Value = gabinete;
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
+
         //DELETE DE LA BASE DE DATOS
-        public DataTable eliminarMarca(int idmarca, ref string mensaje)
+        public Boolean eliminarMarca(int idmarca, ref string m)
         {
-
-            string consulta = "delete from Marca where Id_Marca ="+idmarca;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "delete from Marca where Id_Marca = " + idmarca;
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("Id_Marca",SqlDbType.Int)
+
+            };
+            coleccion[0].Value = idmarca;
+            
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable eliminarCPUgenerico(string cpu, ref string mensaje)
+        public Boolean  eliminarCPUgenerico(int cpu, ref string m)
         {
-            string consulta = "delete from CPU_Generico where id_CPU=" + cpu;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "delete from CPU_Generico where id_CPU=" + cpu; 
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                
+                new SqlParameter("Id_CPU",SqlDbType.Int)
+
+            };
+            coleccion[0].Value = cpu;
+           
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable eliminarcomputadorafinal( int pcfinal, ref string mensaje)
+        public Boolean eliminarcomputadorafinal(string pcfinal, ref string m)
         {
-            string consulta = "delete from computadorafinal where num_inv=" + pcfinal;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "delete from computadorafinal where num_inv=" + "'" + pcfinal + "'";
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+                new SqlParameter("num_inv",SqlDbType.VarChar,250)
+                
+
+            };
+            coleccion[0].Value = pcfinal;
+            
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
-        public DataTable eliminarGabinete( int gabinete, ref string mensaje)
+        public Boolean  eliminarGabinete(int gabinete, ref string m)
         {
-            string consulta = "delete from Gabinete where Id_Gabinete =" + gabinete;
-            DataSet obtener = null;
-            DataTable salida = null;
-            obtener = operacion.ConsultaDataSet(consulta, operacion.Abrirconexion(ref mensaje), ref mensaje);
-
-            if (obtener != null)
+            string sentencia = "delete from Gabinete where Id_Gabinete =" + gabinete;
+            SqlParameter[] coleccion = new SqlParameter[]
             {
-                salida = obtener.Tables[0];
-            }
+
+
+               
+                new SqlParameter("Id_Gabinete",SqlDbType.Int)
+
+            };
+            
+            coleccion[1].Value = gabinete;
+
+            Boolean salida = false;
+            operacion.ModificarBDMasseguro(sentencia, operacion.Abrirconexion(ref m), ref m, coleccion);
             return salida;
         }
+        
         //CONSULTAS ESPECIFICAS
         public DataTable UbicacionDetalles(string NumSerie, ref string mensaje)
         {

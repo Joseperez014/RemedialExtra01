@@ -146,7 +146,7 @@
              </asp:GridView>
              <br />
              <br />
-             <asp:Button ID="Button1" runat="server" BackColor="#0099CC" Text="Inserte un CPU Generico" Width="249px" />
+             <asp:Button ID="Button1" runat="server" BackColor="#0099CC" Text="Inserte un CPU Generico" Width="249px" OnClick="Button1_Click" />
              <br />
              <br />
              <asp:TextBox ID="TextBox3" runat="server" Width="435px"></asp:TextBox>
@@ -155,7 +155,7 @@
         <div class="bg-dark font-italic" ><center><h3>MOSTRAR CPU´S GENERICOS</h3></center></div>
         <div><center>
             <br />
-            <asp:Button ID="Button2" runat="server" BackColor="#666699" Text="Mostrar CPU'S Genericos" Width="173px" />
+            <asp:Button ID="Button2" runat="server" BackColor="#666699" Text="Mostrar CPU'S Genericos" Width="173px" OnClick="Button2_Click" />
             <br />
             <br />
             <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
@@ -172,10 +172,11 @@
             </asp:GridView>
              <br />
             <br />
+             <asp:TextBox ID="TextBox5" runat="server" Width="506px"></asp:TextBox>
              </center></div>
         <div class="bg-dark font-italic "><center><h3>ACTUALIZAR CPU GENERICO </h3></center></div>
         <div><center>
-            <asp:GridView ID="GridView6" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="GridView6" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView6_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
@@ -198,7 +199,10 @@
             <asp:TextBox ID="TextBox4" runat="server" Width="313px"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button3" runat="server" BackColor="#9933FF" Text="Modificar CPU generico" Width="212px" />
+            <asp:Button ID="Button3" runat="server" BackColor="#9933FF" OnClick="Button3_Click" Text="Modificar CPU generico" Width="212px" />
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox6" runat="server" Width="419px"></asp:TextBox>
             </center></div>
         <div class="bg-dark font-italic"><center><h3>ELIMINAR CPU GENERICO </h3></center></div>
         <div><center>
@@ -217,7 +221,11 @@
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
             <br />
-            <asp:Button ID="Button4" runat="server" BackColor="#3399FF" Text="Eliminar CPU" />
+            <asp:Button ID="Button4" runat="server" BackColor="#3399FF" OnClick="Button4_Click1" Text="Eliminar CPU" />
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox7" runat="server" Width="523px"></asp:TextBox>
+            <br />
             </center></div>
     </form>
 </body>
