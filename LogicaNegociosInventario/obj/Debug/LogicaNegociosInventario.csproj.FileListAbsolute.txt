@@ -1,0 +1,11 @@
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\LogicaNegociosInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\LogicaNegociosInventario.pdb
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\AccesoDatosInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\EntidadesInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\AccesoDatosInventario.pdb
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\bin\Debug\EntidadesInventario.pdb
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.csproj.CopyComplete
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\LogicaNegociosInventario\obj\Debug\LogicaNegociosInventario.pdb

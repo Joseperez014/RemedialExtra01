@@ -1,0 +1,6 @@
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\bin\Debug\AccesoDatosInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\bin\Debug\AccesoDatosInventario.pdb
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\obj\Debug\AccesoDatosInventario.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\obj\Debug\AccesoDatosInventario.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\obj\Debug\AccesoDatosInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\AccesoDatosInventario\obj\Debug\AccesoDatosInventario.pdb

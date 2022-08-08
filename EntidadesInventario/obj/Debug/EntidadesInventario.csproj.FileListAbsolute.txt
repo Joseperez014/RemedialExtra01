@@ -1,0 +1,6 @@
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\bin\Debug\EntidadesInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\bin\Debug\EntidadesInventario.pdb
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\obj\Debug\EntidadesInventario.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\obj\Debug\EntidadesInventario.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\obj\Debug\EntidadesInventario.dll
+C:\Users\HP\OneDrive\Escritorio\DesarrolloWEBintegral\Producto23\EntidadesInventario\obj\Debug\EntidadesInventario.pdb
