@@ -88,7 +88,7 @@
              <br />
              <asp:Label ID="Label2" runat="server" Text="Elige una Marca"></asp:Label>
              <br />
-             <asp:GridView ID="GridView3" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+             <asp:GridView ID="GridView3" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" OnSelectedIndexChanged="GridView3_SelectedIndexChanged">
                  <Columns>
                      <asp:CommandField ShowSelectButton="True" />
                  </Columns>
@@ -157,6 +157,7 @@
             <br />
             <asp:Button ID="Button2" runat="server" BackColor="#666699" Text="Mostrar CPU'S Genericos" Width="173px" />
             <br />
+            <br />
             <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="#DCDCDC" />
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
@@ -173,9 +174,51 @@
             <br />
              </center></div>
         <div class="bg-dark font-italic "><center><h3>ACTUALIZAR CPU GENERICO </h3></center></div>
-        <div><center></center></div>
+        <div><center>
+            <asp:GridView ID="GridView6" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
+                </Columns>
+                <EditRowStyle BackColor="#999999" />
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+            </asp:GridView>
+            <br />
+            <asp:Label ID="Label7" runat="server" Text="Escribe la nueva descripcion del CPU a modificar"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox4" runat="server" Width="313px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button3" runat="server" BackColor="#9933FF" Text="Modificar CPU generico" Width="212px" />
+            </center></div>
         <div class="bg-dark font-italic"><center><h3>ELIMINAR CPU GENERICO </h3></center></div>
-        <div><center></center></div>
+        <div><center>
+            <asp:GridView ID="GridView7" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+                <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
+                </Columns>
+                <FooterStyle BackColor="#CCCCCC" />
+                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                <RowStyle BackColor="White" />
+                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                <SortedAscendingHeaderStyle BackColor="#808080" />
+                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                <SortedDescendingHeaderStyle BackColor="#383838" />
+            </asp:GridView>
+            <br />
+            <asp:Button ID="Button4" runat="server" BackColor="#3399FF" Text="Eliminar CPU" />
+            </center></div>
     </form>
 </body>
 </html>

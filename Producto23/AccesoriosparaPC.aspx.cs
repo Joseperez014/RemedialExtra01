@@ -20,6 +20,7 @@ namespace Producto23
                 objBL = new Logicadeentidadesinventario(ConfigurationManager.ConnectionStrings["cn1"].ConnectionString);
                 Session["BL"] = objBL;
                 Marcas();
+                Gabinetes();
             }
             else
             {
@@ -32,6 +33,10 @@ namespace Producto23
                 GridView7.DataBind();
                 GridView8.DataSource = Session["marcas"];
                 GridView8.DataBind();
+                GridView9.DataSource = Session["gabinete"];
+                GridView9.DataBind();
+                GridView10.DataSource = Session["gabinete"];
+                GridView10.DataBind();
             }
 
         }
@@ -47,6 +52,16 @@ namespace Producto23
             GridView7.DataBind();
             GridView8.DataSource = Session["marcas"];
             GridView8.DataBind();
+        }
+        public void Gabinetes()
+        {
+            string m = "";
+            Session["gabinete"] = objBL.obtengabinete(ref m);
+            GridView9.DataSource = Session["gabinete"];
+            GridView9.DataBind();
+            GridView10.DataSource = Session["gabinete"];
+            GridView10.DataBind();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -187,6 +202,16 @@ namespace Producto23
             TextBox12.Text = m;
             md = objBL.MiMessageBox("CONSULTA CORRECTA", m, 2);
             Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
+        }
+
+        protected void Button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

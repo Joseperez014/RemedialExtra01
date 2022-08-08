@@ -205,9 +205,56 @@
             <asp:TextBox ID="TextBox8" runat="server" Width="347px"></asp:TextBox>
             </center> </div>
         <div class="bg-light fst-italic"><center><h3>ACTUALIZAR PC FINAL</h3></center></div>
-        <div><center></center> </div>
+        <div><center>
+            <asp:GridView ID="GridView7" runat="server" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None">
+                <AlternatingRowStyle BackColor="PaleGoldenrod" />
+                <FooterStyle BackColor="Tan" />
+                <HeaderStyle BackColor="Tan" Font-Bold="True" />
+                <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                <SortedDescendingHeaderStyle BackColor="#C2A47B" />
+            </asp:GridView>
+            <br />
+            <asp:Label ID="Label8" runat="server" Text="Escribe el numero de inventario de la PC que quieras modificar"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox9" runat="server" Width="314px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label9" runat="server" Text="Escribe el nuevo estado de la PC final"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox10" runat="server" Width="278px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button3" runat="server" BackColor="#0066FF" OnClick="Button3_Click" Text="Modificar PC" Width="191px" />
+            <br />
+            </center> </div>
         <div class="bg-light fst-italic"><center><h3>EIMINAR PC FINAL&nbsp; </h3></center></div>
-        <div><center></center> </div>
+        <div><center>
+            <asp:GridView ID="GridView8" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+                <FooterStyle BackColor="White" ForeColor="#000066" />
+                <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                <RowStyle ForeColor="#000066" />
+                <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                <SortedDescendingHeaderStyle BackColor="#00547E" />
+            </asp:GridView>
+            <br />
+            <asp:Label ID="Label10" runat="server" Text="Escribe el numero de inventario que quieras eliminar"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="TextBox11" runat="server" Width="301px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button4" runat="server" BackColor="#CC99FF" OnClick="Button4_Click" Text="Eliminar PC final" Width="167px" />
+            </center> </div>
 
     </form>
 </body>

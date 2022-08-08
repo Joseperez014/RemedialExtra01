@@ -118,13 +118,60 @@
         <div>
              <center>
 
+                 <asp:GridView ID="GridView2" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+                     <Columns>
+                         <asp:CommandField ShowSelectButton="True"></asp:CommandField>
+                     </Columns>
+                     <FooterStyle BackColor="White" ForeColor="#000066" />
+                     <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                     <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                     <RowStyle ForeColor="#000066" />
+                     <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                     <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                     <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                     <SortedDescendingHeaderStyle BackColor="#00547E" />
+                 </asp:GridView>
+                 <asp:Label ID="Label1" runat="server" Text="Escribe un nuevo extra de la marca seleccionada"></asp:Label>
+                 <br />
+                 <br />
+                 <asp:Label ID="Label2" runat="server" Text="Extra"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBox4" runat="server" Width="273px"></asp:TextBox>
+                 <br />
+                 <br />
+                 <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Modificar Marca" Width="118px" />
+                 <br />
+                 <br />
+                 <br />
+                 <asp:TextBox ID="TextBox5" runat="server" Width="753px"></asp:TextBox>
+                 <br />
+
              </center>
         </div>
         <div class="bg-info font-italic">
-            <center><h3>ELIMINAR MARCA</h3></center>
+            <center><h3>ELIMINAR MARCA</h3>
+            </center>
         </div>
         <div>
              <center>
+
+                 <asp:GridView ID="GridView3" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+                     <Columns>
+                         <asp:CommandField ShowSelectButton="True"></asp:CommandField>
+                     </Columns>
+                     <FooterStyle BackColor="White" ForeColor="#000066" />
+                     <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                     <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                     <RowStyle ForeColor="#000066" />
+                     <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                     <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                     <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                     <SortedDescendingHeaderStyle BackColor="#00547E" />
+                 </asp:GridView>
+                 <br />
+                 <asp:Button ID="Button4" runat="server" BackColor="#9999FF" Text="Eliminar Marca" Width="289px" />
+                 <br />
 
              </center>
         </div>

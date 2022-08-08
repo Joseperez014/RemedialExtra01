@@ -295,9 +295,53 @@
             <div class="bg-light fst-italic"><center><h3>MODIFICAR GABINETE</h3></center></div>
         <div><center>
 
+             <asp:GridView ID="GridView9" runat="server" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+                 <Columns>
+                     <asp:CommandField ShowSelectButton="True" />
+                 </Columns>
+                 <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+                 <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+                 <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
+                 <RowStyle BackColor="White" ForeColor="#003399" />
+                 <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                 <SortedAscendingCellStyle BackColor="#EDF6F6" />
+                 <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
+                 <SortedDescendingCellStyle BackColor="#D6DFDF" />
+                 <SortedDescendingHeaderStyle BackColor="#002876" />
+             </asp:GridView>
+             <br />
+             <asp:Label ID="Label10" runat="server" Text="Escribe un nuevo modelo de gabinete"></asp:Label>
+             <br />
+             <br />
+             <asp:TextBox ID="TextBox16" runat="server" Width="329px"></asp:TextBox>
+             <br />
+             <br />
+             <asp:Button ID="Button9" runat="server" BackColor="#0099CC" BorderColor="#006699" Text="Modificar Gabinete" Width="194px" />
+             <br />
+             <br />
+             <asp:TextBox ID="TextBox17" runat="server" Width="547px"></asp:TextBox>
+
              </center></div>
             <div class="bg-light fst-italic"><center><h3>ELIMINAR GABINETE</h3></center></div>
          <div><center>
+
+              <asp:GridView ID="GridView10" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" OnSelectedIndexChanged="GridView10_SelectedIndexChanged">
+                  <Columns>
+                      <asp:CommandField ShowSelectButton="True" />
+                  </Columns>
+                  <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                  <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                  <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                  <RowStyle BackColor="White" ForeColor="#330099" />
+                  <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                  <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                  <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                  <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                  <SortedDescendingHeaderStyle BackColor="#7E0000" />
+              </asp:GridView>
+              <br />
+              <asp:Button ID="Button10" runat="server" BackColor="#CC0066" Text="Eliminar gabinete" Width="162px" />
+              <br />
 
               </center></div>
     </form>

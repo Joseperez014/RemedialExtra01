@@ -23,6 +23,7 @@ namespace Producto23
                 Mouse();
                 Monitor();
                 Laboratorio();
+                PCfinal();
             }
             else
             {
@@ -37,6 +38,10 @@ namespace Producto23
                 GridView4.DataBind();
                 GridView6.DataSource = Session["laboratorio"];
                 GridView6.DataBind();
+                GridView7.DataSource = Session["pcfinal"];
+                GridView7.DataBind();
+                GridView8.DataSource = Session["pcfinal"];
+                GridView8.DataBind();
             }
         }
         public void Cpugenerico()
@@ -77,6 +82,16 @@ namespace Producto23
             Session["laboratorio"] = objBL.obtenlaboratorio(ref m);
             GridView6.DataSource = Session["laboratorio"];
             GridView6.DataBind();
+
+        }
+        public void PCfinal()
+        {
+            string m = "";
+            Session["pcfinal"] = objBL.obtencomputadorafinal(ref m);
+            GridView7.DataSource = Session["pcfinal"];
+            GridView7.DataBind();
+            GridView8.DataSource = Session["pcfinal"];
+            GridView8.DataBind();
 
         }
         protected void Button2_Click(object sender, EventArgs e)
@@ -154,6 +169,16 @@ namespace Producto23
                 TextBox2.Text = m;
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "etiqueta" + 1, "" + md + "", true);
             } 
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
