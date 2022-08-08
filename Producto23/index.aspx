@@ -66,6 +66,9 @@
         <div>
            <center><h2>BIENVENIDO AL INVENTARIO </h2></center> 
         </div>
+        <center><h2>BIENVENIDO AL INVENTARIO </h2></center> 
+        <center><h2>BIENVENIDO AL INVENTARIO </h2></center> 
+        <center><h2>BIENVENIDO AL INVENTARIO </h2></center> 
     </form>
 </body>
 </html>
